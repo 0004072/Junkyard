@@ -10,7 +10,7 @@ namespace OomiTwoPlayer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            Console.WriteLine("+++++++++++++\n\nOomi V1.0 ...\n\n+++++++++++++\n");
             Deck deck = new Deck(52);
             foreach (Suits suit in Enum.GetValues(typeof(Suits))) {
                 foreach (Numbers i in Enum.GetValues(typeof(Numbers))) {;
@@ -63,8 +63,8 @@ namespace OomiTwoPlayer
                 if (newGame.Key != ConsoleKey.Y)
                     goto end_gameplay;
             }
-            end_gameplay:
-
+        end_gameplay:
+            Console.WriteLine("Bye! :)");
             Console.ReadKey();
         }
     }
