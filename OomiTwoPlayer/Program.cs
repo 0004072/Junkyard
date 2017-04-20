@@ -10,10 +10,12 @@ namespace OomiTwoPlayer
     {
         static void Main(string[] args)
         {
+            Console.WriteLine();
             Deck deck = new Deck(52);
             foreach (Suits suit in Enum.GetValues(typeof(Suits))) {
-                foreach (Numbers i in Enum.GetValues(typeof(Numbers)))
+                foreach (Numbers i in Enum.GetValues(typeof(Numbers))) {;
                     deck.putCard(new Card(suit, i));
+                }
             }
 
             Player player1 = new Player("Player1", new Deck(10));
@@ -30,9 +32,6 @@ namespace OomiTwoPlayer
                 Player lastSetWinner = player1;
                 Player otherPlayer = player2;
 
-                Console.WriteLine(player1.Deck.ToString());
-                Console.WriteLine(player2.Deck.ToString());
-
                 for (int i = 1; i <= 10; i++) {
                     Card cardLastSetWinner = lastSetWinner.play();
                     Card cardOtherPlayer = otherPlayer.play(cardLastSetWinner);
@@ -47,13 +46,20 @@ namespace OomiTwoPlayer
 
                     }
                     Console.WriteLine("{0} WINS!\n", lastSetWinner.Name);
+                    deck.putCard(cardLastSetWinner);
+                    deck.putCard(cardOtherPlayer);
                     lastSetWinner.SetsWon++;
                 }
 
-                goto end_gameplay;
+                Player winner = player1.SetsWon > player2.SetsWon ? player1 : player1.SetsWon == player2.SetsWon ? new Player("None", null) : player2;
+
+                Console.WriteLine("--- GAME STATS --- \nPlayer 1 : {0}\nPlayer 2 : {1}\nWinner : {2}\n--- END ---\n", player1.SetsWon, player2.SetsWon, winner.Name);
                 
                 Console.Write("Would you like to play again? (Y/n): ");
                 ConsoleKeyInfo newGame = Console.ReadKey();
+                Console.WriteLine("\n");
+                player1.SetsWon = 0;
+                player2.SetsWon = 0;
                 if (newGame.Key != ConsoleKey.Y)
                     goto end_gameplay;
             }

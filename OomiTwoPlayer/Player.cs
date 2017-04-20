@@ -68,6 +68,7 @@ namespace OomiTwoPlayer
                 Dictionary<Numbers, Card> suitCards = this.deck.getSuitsCards(otherCard.Suit);
                 List<Numbers> sortedCardsList = suitCards.Keys.ToList();
                 sortedCardsList.Sort();
+
                 if (sortedCardsList.Any(z => z > otherCard.Number))
                 {
                     sortedCardsList.RemoveAll(x => x < otherCard.Number);
@@ -78,7 +79,7 @@ namespace OomiTwoPlayer
             }
             else
             {
-                Array suit = Enum.GetValues(typeof(Suits));
+                Suits[] suit = this.deck.getAvailableSuits();
                 Random random = new Random();
                 Suits randomSuit = (Suits)suit.GetValue(random.Next(suit.Length));
                 Dictionary<Numbers, Card> suitCards = this.deck.getSuitsCards(randomSuit);
