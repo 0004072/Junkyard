@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotRunning", "RobotRunnin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OomiTwoPlayer", "OomiTwoPlayer\OomiTwoPlayer.csproj", "{4BDDD6C1-F7EA-43C1-953D-92E98A01DD33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficLight", "TrafficLight\TrafficLight.csproj", "{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4BDDD6C1-F7EA-43C1-953D-92E98A01DD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BDDD6C1-F7EA-43C1-953D-92E98A01DD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BDDD6C1-F7EA-43C1-953D-92E98A01DD33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
