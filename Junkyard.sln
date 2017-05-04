@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OomiTwoPlayer", "OomiTwoPla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrafficLight", "TrafficLight\TrafficLight.csproj", "{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenSegDisplay", "SevenSegDisplay\SevenSegDisplay.csproj", "{681F2D85-3A92-4B6D-9D8E-642207D1924D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{054D2312-8CFF-4093-8257-FFF1E8E7E0A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7FB06D8-6B88-4A7A-86BC-822B34648BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681F2D85-3A92-4B6D-9D8E-642207D1924D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681F2D85-3A92-4B6D-9D8E-642207D1924D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681F2D85-3A92-4B6D-9D8E-642207D1924D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681F2D85-3A92-4B6D-9D8E-642207D1924D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054D2312-8CFF-4093-8257-FFF1E8E7E0A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054D2312-8CFF-4093-8257-FFF1E8E7E0A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054D2312-8CFF-4093-8257-FFF1E8E7E0A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054D2312-8CFF-4093-8257-FFF1E8E7E0A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
