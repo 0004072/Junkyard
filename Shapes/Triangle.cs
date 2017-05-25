@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    class Triangle : Rectangle
+    public class Triangle : Rectangle
     {
         private double hypotenuse;
         private double baseEdge;
@@ -29,7 +29,7 @@ namespace Shapes
         public Triangle(double baseEdge, double hypotenuse, double baseFragment) : base(baseEdge, hypotenuse) {
             this.baseEdge = baseEdge;
             this.hypotenuse = hypotenuse;
-            if (baseFragment > 0 && baseFragment < 1)
+            if (baseFragment > 0)
                 this.baseFragment = baseFragment;
             else {
                 throw new Exception("Invalid value for the base fragment ratio!");
