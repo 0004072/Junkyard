@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Shapes;
 
-
 namespace ShapesRunner
 {
     class Program
