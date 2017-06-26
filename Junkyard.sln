@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesRunner", "ShapesRunne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeInfo", "EmployeeInfo\EmployeeInfo.csproj", "{F21E89DA-93B3-45AE-9362-B67824B902D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureMonitor", "TemperatureMonitor\TemperatureMonitor.csproj", "{4882ECAC-7DA4-438B-8CB8-B17EFEFD60AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F21E89DA-93B3-45AE-9362-B67824B902D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F21E89DA-93B3-45AE-9362-B67824B902D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F21E89DA-93B3-45AE-9362-B67824B902D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4882ECAC-7DA4-438B-8CB8-B17EFEFD60AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4882ECAC-7DA4-438B-8CB8-B17EFEFD60AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4882ECAC-7DA4-438B-8CB8-B17EFEFD60AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4882ECAC-7DA4-438B-8CB8-B17EFEFD60AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
