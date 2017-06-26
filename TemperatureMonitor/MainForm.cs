@@ -17,6 +17,7 @@ namespace TemperatureMonitor
         {
             InitializeComponent();
             this.tempMonitor = new Monitor(envTemp);
+            this.lblCurrentTemp.Text = String.Format(@"{0}{1}C", this.tempMonitor.Temp.ToString("#.##"), '\u2070');
             this.btnRainy.Click += new EventHandler(change_temp);
             this.btnSunny.Click += new EventHandler(change_temp);
             this.btnAdHoc.Click += new EventHandler(change_temp);
@@ -28,11 +29,11 @@ namespace TemperatureMonitor
             float deltaT = 0.0f;
             switch (((Button)sender).Name) {
                 case "btnSunny":
-                    deltaT = 10;
+                    deltaT = 10.0f;
                     break;
 
                 case "btnRainy":
-                    deltaT = -10;
+                    deltaT = -10.0f;
                     break;
 
                 case "btnAdHoc":
@@ -46,7 +47,7 @@ namespace TemperatureMonitor
 
         private void ShowAlert(object sender, TempArgs s)
         {
-            MessageBox.Show(String.Format(@"Temperature changed by {0}!", s.DeltaT.ToString("#.##")));
+            MessageBox.Show(String.Format(@"Temperature changed by {0}{1}C!", s.DeltaT.ToString("0.##"), '\u2070'));
         }
     }
 }
